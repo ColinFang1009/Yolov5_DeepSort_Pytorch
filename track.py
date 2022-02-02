@@ -190,8 +190,8 @@ def detect(opt):
         if platform == 'darwin':  # MacOS
             os.system('open ' + save_path)
     print('Total count of meal', count_meal)
-    with open(f"{txt_file_name}_count.txt", 'w+') as f:
-      f.write(f'{txt_file_name}\n{count_meal}')
+    with open(f"{txt_file_name}_count.csv", 'w+') as f:
+      f.write(f'{txt_file_name},{count_meal}\n')
 
 
 if __name__ == '__main__':
