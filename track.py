@@ -160,7 +160,7 @@ def detect(opt):
                 LOGGER.info(f'{s}Done. YOLO:({dt[1]:.3f}s), DeepSort:({t5 - t4:.3f}s)')
             else:
                 deepsort.increment_ages()
-                LOGGER.info('No detections')
+                LOGGER.info(f'{s} No detections')
             # Stream results
             im0 = annotator.result()
             if show_vid:
